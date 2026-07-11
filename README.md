@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🤖 GrowEasy AI CSV Importer
 
 ### An AI-Powered CRM Lead Extraction Engine
@@ -15,6 +17,8 @@
 [Features](#-features) • [Demo](#-live-demo) • [Installation](#-installation) • [Usage](#-usage) • [Architecture](#-architecture) • [Deployment](#-deployment) • [API Docs](#-api-documentation)
 
 ---
+
+</div>
 
 ## 📋 Overview
 
