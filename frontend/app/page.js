@@ -10,7 +10,7 @@ import StepIndicator from '../components/StepIndicator';
 import ErrorAlert from '../components/ErrorAlert';
 import styles from './page.module.css';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_URL = 'https://ai-powered-csv-extraction-groweasy-production.up.railway.app';
 
 
 // Steps
