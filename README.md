@@ -72,7 +72,7 @@ This application uses **Groq's Llama 3.3 70B model** to intelligently understand
 
 ## 🌐 Live Demo
 
-> **Frontend:** [https://groweasy-ai-importer.vercel.app](https://groweasy-ai-importer.vercel.app) *(deploy yours here)*
+> **Frontend:** [https://ai-powered-csv-extraction-grow-easy-plum.vercel.app](https://ai-powered-csv-extraction-grow-easy-plum.vercel.app/)
 >
 > **Backend:** [https://groweasy-backend.railway.app](https://groweasy-backend.railway.app) *(deploy yours here)*
 
