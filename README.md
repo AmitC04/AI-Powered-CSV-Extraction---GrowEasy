@@ -74,7 +74,7 @@ This application uses **Groq's Llama 3.3 70B model** to intelligently understand
 
 > **Frontend:** [https://ai-powered-csv-extraction-grow-easy-plum.vercel.app](https://ai-powered-csv-extraction-grow-easy-plum.vercel.app/)
 >
-> **Backend:** [https://groweasy-backend.railway.app](https://groweasy-backend.railway.app) *(deploy yours here)*
+> **Backend:** [https://ai-powered-csv-extraction-groweasy-production.up.railway.app](https://ai-powered-csv-extraction-groweasy-production.up.railway.app) *(Live AI Server)*
 
 ---
 
