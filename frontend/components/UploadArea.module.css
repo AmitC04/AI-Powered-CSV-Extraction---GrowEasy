@@ -1,0 +1,146 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+}
+
+.dropZone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  border: 1.5px dashed var(--border-default);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.dropZone:hover {
+  border-color: var(--accent-500);
+  background: rgba(139, 92, 246, 0.04);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.dragging {
+  border-color: var(--accent-400);
+  background: rgba(139, 92, 246, 0.08);
+  box-shadow: 0 0 0 6px var(--accent-glow), inset 0 0 60px rgba(139, 92, 246, 0.05);
+  transform: scale(1.005);
+}
+
+/* Decorative rings */
+.ring1, .ring2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.ring1 { width: 200px; height: 200px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.ring2 { width: 320px; height: 320px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.dragging .ring1 { border-color: rgba(139, 92, 246, 0.4); transform: translate(-50%, -50%) scale(1.1); }
+.dragging .ring2 { border-color: rgba(139, 92, 246, 0.2); transform: translate(-50%, -50%) scale(1.1); }
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(96, 165, 250, 0.2));
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: var(--radius-xl);
+  color: var(--accent-400);
+  transition: transform 0.3s ease;
+}
+
+.dropZone:hover .iconWrap {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--accent-glow);
+}
+
+.iconBounce {
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-6px); }
+}
+
+.text { display: flex; flex-direction: column; gap: 6px; }
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.browse {
+  color: var(--accent-400);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+
+.supported {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 440px;
+}
+
+.supportedTag {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-full);
+  padding: 3px 10px;
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px; height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
